@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorias_array">
+        <item>TRABAJO</item>
+        <item>PERSONAL</item>
+        <item>URGENTE</item>
+    </string-array>
+
+    <string-array name="prioridades_array">
+        <item>BAJA</item>
+        <item>MEDIA</item>
+        <item>ALTA</item>
+    </string-array>
+
+    <string-array name="estados_array">
+        <item>PENDIENTE</item>
+        <item>COMPLETADO</item>
+    </string-array>
+</resources>
