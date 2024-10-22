@@ -13,10 +13,14 @@
         android:theme="@style/Theme.Tareas"
         tools:targetApi="31">
         <activity
+<<<<<<< feature-eliminar-listar
             android:name=".ListaTareaActivity"
             android:exported="false" />
         <activity
             android:name=".BorrarTareaActivity"
+=======
+            android:name=".CrearTareaActivity"
+>>>>>>> dev
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
@@ -33,9 +37,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".CrearTareaActivity"
-            android:exported="false" />
         <activity
             android:name=".EditarTareaActivity"
             android:exported="false" />
