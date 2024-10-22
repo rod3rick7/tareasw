@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Tareas"
         tools:targetApi="31">
         <activity
+            android:name=".CrearTareaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
@@ -27,9 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".CrearTareaActivity"
-            android:exported="false" />
         <activity
             android:name=".EditarTareaActivity"
             android:exported="false" />
