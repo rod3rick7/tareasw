@@ -12,37 +12,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tareas"
         tools:targetApi="31">
-        <activity
-<<<<<<< feature-eliminar-listar
-            android:name=".ListaTareaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BorrarTareaActivity"
-=======
-            android:name=".CrearTareaActivity"
->>>>>>> dev
-            android:exported="false" />
-        <activity
-            android:name=".MenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
+
         <activity
             android:name=".LoginActivity"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".CrearTareaActivity"
+            android:exported="false" />
+
         <activity
             android:name=".EditarTareaActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".BorrarTareaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ListaTareaActivity"
+            android:exported="false" />
+
         <activity
             android:name=".HistorialTareaActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
