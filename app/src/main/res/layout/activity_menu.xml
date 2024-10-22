@@ -1,38 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".MenuActivity">
 
-    <Button
-        android:id="@+id/crearTareaButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Crear Tarea" />
-
-    <Button
-        android:id="@+id/borrarTareaButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Borrar Tarea" />
-
-    <Button
-        android:id="@+id/editarTareaButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Editar Tarea" />
-
-    <Button
-        android:id="@+id/listaTareasButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lista de Tareas" />
-
-    <Button
-        android:id="@+id/historialTareaButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Historial de Tareas" />
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
