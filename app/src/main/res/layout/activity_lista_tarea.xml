@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Tareas"
+        android:textSize="24sp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnFiltrarPrioridad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por Prioridad"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/btnFiltrarEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por Estado"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/btnFiltrarFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por Fecha"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/btnQuitarFiltros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quitar Filtros"
+        android:layout_margin="8dp" />
+
+    <ListView
+        android:id="@+id/listViewTareas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+
