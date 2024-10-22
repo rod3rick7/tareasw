@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Tareas"
         tools:targetApi="31">
         <activity
+            android:name=".BorrarTareaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
@@ -32,9 +35,6 @@
             android:exported="false" />
         <activity
             android:name=".EditarTareaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BorrarTareaActivity"
             android:exported="false" />
         <activity
             android:name=".ListaTareaActivity"
