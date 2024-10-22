@@ -80,6 +80,26 @@ public class EditarTareaActivity extends AppCompatActivity {
         etDescripcion.addTextChangedListener(textWatcher);
     }
 
+
+    private void actualizarTarea(Tarea tarea) {
+        SQLiteDatabase database = dbHelper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(DbHelper.COLUMN_TITULO, tarea.getTitulo());
+        values.put(DbHelper.COLUMN_DESCRIPCION, tarea.getDescripcion());
+        values.put(DbHelper.COLUMN_FECHA_LIMITE, tarea.getFechaLimite());
+        values.put(DbHelper.COLUMN_PRIORIDAD, tarea.getPrioridad()); // Guardar como String
+        values.put(DbHelper.COLUMN_CATEGORIA, tarea.getCategoria());
+        values.put(DbHelper.COLUMN_ESTADO, tarea.getEstado());
+
+        int rowsAffected = database.update(DbHelper.TABLE_TAREAS, values, DbHelper.COLUMN_TAREA_ID + " = ?", new String[]{String.valueOf(tarea.getId())});
+        Toast.makeText(this, rowsAffected > 0 ? "Tarea actualizada con éxito" : "Error al actualizar la tarea", Toast.LENGTH_SHORT).show();
+        database.close();
+        finish();
+    }
+
+
+
+
     private void configurarSpinners() {
         ArrayAdapter<CharSequence> categoriaAdapter = ArrayAdapter.createFromResource(this,
                 R.array.categorias_array, android.R.layout.simple_spinner_item);
