@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "453294444636",
+    "project_id": "tareas-27377",
+    "storage_bucket": "tareas-27377.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453294444636:android:d2de5764cdc7af3163d699",
+        "android_client_info": {
+          "package_name": "com.quantum.tareas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCidFMOaTNNuSN-G_19j2epKYjhvP9JwAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

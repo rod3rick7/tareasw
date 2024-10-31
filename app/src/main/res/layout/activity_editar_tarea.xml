@@ -2,81 +2,76 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:gravity="center">
 
     <TextView
-        android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Editar Tarea"
+        android:layout_marginBottom="32dp"
+        android:text="EDITAR TAREA"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
-        android:layout_gravity="center"
-        android:paddingBottom="16dp" />
-
-    <Button
-        android:id="@+id/btnSeleccionarTarea"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Seleccionar Tarea" />
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etTitulo"
+        android:id="@+id/tituloEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Título" />
+        android:hint="Título"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
-        android:id="@+id/etDescripcion"
+        android:id="@+id/descripcionEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Descripción"
-        android:inputType="textMultiLine"
-        android:lines="4"
-        android:maxLines="4" />
-
-    <TextView
-        android:id="@+id/tvFechaLimite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fecha Límite"
-        android:paddingTop="16dp" />
-
-    <TextView
-        android:id="@+id/tvSeleccionarFecha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Selecciona una fecha"
-        android:textColor="@android:color/holo_blue_light"
-        android:paddingBottom="8dp"
-        android:clickable="true"
-        android:focusable="true"/>
-
-    <Spinner
-        android:id="@+id/spinnerPrioridad"
-        android:layout_width="match_parent"
-        android:layout_height="34dp"
-        android:spinnerMode="dropdown" />
-
-    <Spinner
-        android:id="@+id/spinnerCategoria"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:spinnerMode="dropdown" />
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
 
     <Button
-        android:id="@+id/btnEstado"
+        android:id="@+id/fechaLimiteButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ESTADO"
-        android:layout_marginTop="8dp" />
+        android:text="Seleccionar Fecha"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <Spinner
+        android:id="@+id/categoriaSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prioridad"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <SeekBar
+        android:id="@+id/prioridadSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="1"
+        android:layout_marginBottom="16dp"/>
 
     <Button
-        android:id="@+id/btnGuardar"
+        android:id="@+id/guardarButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="GUARDAR CAMBIOS"
-        android:layout_marginTop="8dp" />
-
+        android:text="Guardar Cambios"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"/>
 </LinearLayout>

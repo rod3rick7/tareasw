@@ -10,26 +10,40 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="BORRAR TAREA"
-        android:textColor="@android:color/white"
+        android:text="HISTORIAL"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:paddingBottom="16dp" />
 
     <ListView
         android:id="@+id/tareasListView"
         android:layout_width="match_parent"
-        android:layout_height="489dp"
+        android:layout_height="492dp"
         android:layout_marginBottom="16dp"
         android:background="@color/transparent"
         android:dividerHeight="0dp" />
 
     <Button
-        android:id="@+id/borrarButton"
+        android:id="@+id/toggleButton"
         android:layout_width="match_parent"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:layout_height="wrap_content"
+        android:text="RESTAURAR TAREAS"
+        android:layout_gravity="center"
         android:background="@drawable/rounded_button"
-        android:text="ELIMINAR TAREAS SELECCIONADAS"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/eliminarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ELIMINAR PERMANENTEMENTE"
+        android:layout_gravity="center"
+        android:background="@drawable/button_red_border"
+        android:textColor="@android:color/white"
+        android:padding="10dp" />
+
 </LinearLayout>

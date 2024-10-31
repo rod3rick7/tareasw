@@ -3,24 +3,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/usernameEditText"
+    <TextView
+        android:id="@+id/registerTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre de usuario" />
+        android:layout_marginBottom="32dp"
+        android:text="REGISTRAR CUENTA"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
 
     <EditText
-        android:id="@+id/passwordEditText"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/registerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar" />
+        android:text="Registrarse"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"/>
 </LinearLayout>

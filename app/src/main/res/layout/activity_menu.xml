@@ -3,36 +3,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="GESTOR DE TAREAS"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/crearTareaButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Crear Tarea" />
+        android:text="Crear Tarea"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/borrarTareaButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Borrar Tarea" />
+        android:text="Borrar Tarea"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/editarTareaButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Editar Tarea" />
+        android:text="Editar Tarea"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
 
     <Button
-        android:id="@+id/listaTareasButton"
+        android:id="@+id/listaTareaButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lista de Tareas" />
+        android:text="Lista de Tareas"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
 
     <Button
-        android:id="@+id/historialTareaButton"
+        android:id="@+id/historialButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Historial de Tareas" />
-
+        android:text="Historial"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"/>
 </LinearLayout>
